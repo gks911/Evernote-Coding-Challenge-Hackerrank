@@ -1,4 +1,4 @@
-Evernote-Coding-Challenge-Hackerrank
+# Evernote-Coding-Challenge-Hackerrank
 ====================================
 
 Solution to the Evernote Coding challenge that was held on Hackerrank
@@ -6,14 +6,17 @@ Input Format
 Your solution must support 4 commands:
 
 `CREATE`
+
 `UPDATE`
+
 `DELETE`
+
 `SEARCH`
 The `CREATE`, `UPDATE`, and `DELETE` commands indicate modifications to the set of Notes that can be searched.
 
-**CREATE
+### CREATE
 
-The CREATE command indicates that a Note should be added to the set of searchable Notes. It will be followed by an XML document with the following format:
+The `CREATE` command indicates that a Note should be added to the set of searchable Notes. It will be followed by an XML document with the following format:
 
 ```
 <note>
@@ -54,15 +57,15 @@ The content element contains the plain-text content of the Note. The content wil
 
 The closing will be on a line by itself.
 
-UPDATE
+### UPDATE
 
 The UPDATE command is used to indicate that a Note changed and will be followed by an XML document with the same format as documented above, with a guid that corresponds to a Note previously added via the CREATE command.
 
-DELETE
+### DELETE
 
 The DELETE command is used to indicate that a Note no longer needs be searchable. It will be followed by a single line containing the GUID of the Note to remove.
 
-SEARCH
+### SEARCH
 
 The SEARCH command will be followed by a single line containing a search query.
 
@@ -86,10 +89,10 @@ Note creation date/time
 
 created:20140101 matches notes created on or after January 1, 2014. Date boundaries are based on the current local time.
 
-Output Format
+### Output Format
 
 The CREATE, UPDATE, and DELETE commands should produce no output. The SEARCH command should output a single line consisting of a comma separated list of Note GUIDs that match the search. A note matches a search if it matches all of the provided search terms. The results should be ordered by Note creation time (earliest first). If no Notes match the search an empty line should be output.
 
-Constraints
+### Constraints
 
 The input fill will not be greater than 200,000 lines and the entire data can fit in memory.
