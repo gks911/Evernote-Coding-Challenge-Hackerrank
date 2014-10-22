@@ -5,13 +5,13 @@ Solution to the Evernote Coding challenge that was held on Hackerrank
 Input Format 
 Your solution must support 4 commands:
 
-CREATE
-UPDATE
-DELETE
-SEARCH
-The CREATE, UPDATE, and DELETE commands indicate modifications to the set of Notes that can be searched.
+`CREATE`
+`UPDATE`
+`DELETE`
+`SEARCH`
+The `CREATE`, `UPDATE`, and `DELETE` commands indicate modifications to the set of Notes that can be searched.
 
-CREATE
+**CREATE
 
 The CREATE command indicates that a Note should be added to the set of searchable Notes. It will be followed by an XML document with the following format:
 
